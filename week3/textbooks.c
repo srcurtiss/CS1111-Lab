@@ -1,3 +1,13 @@
+/*
+ *
+ * CS1111 Lab Week 3
+ *
+ * @author Derek Gehring
+ * @email dtgehrin@mtu.edu
+ * @date 9/13/2024
+ *
+ */
+
 #include <stdio.h>
 
 int main() {
