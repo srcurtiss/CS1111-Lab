@@ -16,7 +16,8 @@
    printf("Please enter 2 numbers ");
    scanf("%d %d", &num1, &num2);
 
-	// Outputs based on Comparisons
+// Outputs based on Comparisons
+	  
    if (num1==num2)
 	{  
 	 printf("Are the numbers equal? Yes\n");
@@ -42,7 +43,8 @@
 	 printf( "Is the first number less than second? No\n");
 	 printf("Is the first number greater than the second? Yes\n");
 	}
-	//Outputs for the question about greater than or equal too there because three posible outputs
+//Outputs for the question about greater than or equal too there because three posible outputs
+	  
    if (num1<num2 && num1!=num2)
 	{
 	 printf("Is the first number less than or equal to the second? Yes\n");
