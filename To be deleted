@@ -1,0 +1,58 @@
+*This program asks the user for a number of questions, the program then has the user solve that number of simple addition or subraction questions. Finally the program tells the user how many of the questions they got right.
+
+ *
+ *@authors Luke Johnson
+ *@email lukej@mtu.edu
+ *@date 09/26/2024
+ */
+
+//Including libraries
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+//Initializing variables
+        int qnum = 0;
+        int r1;
+        int r2;
+        int r3;
+        int output = 0;
+        int input = 0;
+        int counter = 0;
+        char operator;
+//Seed our random number
+        srand(time(NULL));
+//Asks for the number of questions, then scans for the input
+printf("How many questions would you like? ");
+scanf("%d",&qnum);
+//Runs a loop however many times the user entered for the input
+        for (int i=0;i<qnum;i++){
+//Assigns the two number variables random values and randomly selects 0 or 1 for variable r3
+        int r1 = (rand() % 99)+1;
+        int r2 = (rand() % 99)+1;
+        int r3 = (rand() % 2);
+//Decides if the operator is + or - based on the value of r3
+                if(r3==1){
+                operator = '+';
+                output = r1 + r2;
+
+                }else{
+                operator = '-';
+                output = r1 - r2;
+
+                }
+//Prints an equation using the opperator selected above and scans for the answer from the user
+                printf("%d %c %d = ", r1, operator, r2);
+                scanf("%d", &input);
+//If the user answered right then it increases the counter
+ if(input == output){
+                counter++;
+
+        }
+        }
+//Tells the user how many of the questions they answered right
+printf("You got %d/%d correct", counter , qnum);
+
+return 0;
+}
