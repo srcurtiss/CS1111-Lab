@@ -1,5 +1,5 @@
 /*
- *This program prints stars starting at 1 and then 2 and so on
+ *This program prints stars and uses another function to be called into the main function!
  *
  *@authors Luke Johnson, Shealyn Curtis, Isabella Hasaj, Derek Gehring
  *@email lukej@mtu.edu dtgehrin@mtu.edu ihasaj@mtu.edu srcurtis@mtu.edu
