@@ -18,6 +18,7 @@ double myabs(double data){
 int main() {
         double data;
 
+        //Prompt user for input
         printf("Enter a number: ");
         scanf("%lf", &data);//Read user input and store it as "data"
 
